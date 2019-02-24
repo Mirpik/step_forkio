@@ -1,0 +1,29 @@
+.header {
+
+}
+
+.container {
+
+}
+
+.container--style {
+    min-width: 320px;
+}
+
+.up-header-block--style {
+    height: 103px;
+    @include back-color(#262626);
+}
+// .burger-menu-btn {}
+
+// .btn-element-wrapper {
+//     padding: 9px 12px 12px 13px;
+// }
+
+// .btn-element {
+//     width: 18px;
+//     height: 2px;
+//     background-color: #ffffff;
+//     margin: 2px 0;
+//     transition: all 0.05s linear;
+// }

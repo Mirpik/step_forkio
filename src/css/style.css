@@ -1,5 +1,6 @@
-div {
-  color: red; }
+.container--style {
+  min-width: 320px; }
 
-div {
-  color: blue; }
+.up-header-block--style {
+  height: 103px;
+  background-color: #262626; }
