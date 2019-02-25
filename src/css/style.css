@@ -4,11 +4,49 @@
 .up-header-block {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 103px;
+  padding: 0 10px 0 10px;
   background-color: #262626; }
 
-.logo {
+.up-header-block__logo {
   width: 43px;
   height: 41px;
-  margin-left: 16px;
   background-image: url(../img/header-logo.png); }
+
+.up-header-block__button {
+  width: 119px;
+  height: 37px;
+  position: relative;
+  right: 11px;
+  border-radius: 20px;
+  background-color: #8e82ae; }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.button__text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: Montserrat, sans-serif; }
+
+.burger-menu-btn {
+  width: 20px;
+  height: 21px; }
+
+.burger-menu-btn__wrapper {
+  display: flex;
+  flex-flow: row-reverse wrap; }
+
+.burger-menu-btn__element {
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 2px 0;
+  transition: all 0.05s linear; }
+
+.burger-menu-btn__element:first-child {
+  width: 15px; }
