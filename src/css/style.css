@@ -1,16 +1,14 @@
-.container--style {
+.container {
   min-width: 320px; }
 
 .up-header-block {
   display: flex;
-  align-items: center; }
-  .up-header-block--style {
-    height: 103px;
-    background-color: #262626; }
+  align-items: center;
+  height: 103px;
+  background-color: #262626; }
 
 .logo {
   width: 43px;
-  height: 41px; }
-  .logo--style {
-    margin-left: 16px;
-    background-image: url(../img/header-logo.png); }
+  height: 41px;
+  margin-left: 16px;
+  background-image: url(../img/header-logo.png); }

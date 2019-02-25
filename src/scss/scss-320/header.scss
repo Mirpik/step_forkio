@@ -3,26 +3,19 @@
 }
 
 .container {
-    &--style {
         min-width: 320px;
-    }
-    
 }
 
 .up-header-block {
     @include flex-align-pos (center);
-    &--style {
         height: 103px;
         background-color:#262626;
-    }
 }
 
 .logo {
     @include width-height (43px, 41px);
-    &--style {
         margin-left: 16px;
         background-image: url(../img/header-logo.png);
-    }
 }
 
 
