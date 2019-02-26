@@ -1,3 +1,4 @@
+// main property
 @mixin flex-justify-pos ($justify) {
     display: flex;
     justify-content: $justify;
@@ -8,13 +9,22 @@
     align-items: $align;
 }
 
+// block size
 @mixin width-height ($width, $height) {
     width: $width;
     height: $height;
 }
 
+// fonts size and roperty
 @mixin font-s_font-w_color ($font-size, $font-weight, $color) {
     font-size: $font-size;
     font-weight: $font-weight;
     color: $color;
+}
+
+// img property
+@mixin background-img-property ($backg-pos, $backg-repeat, $backg-size) {
+    background-position: $backg-pos;
+    background-repeat: $backg-repeat;
+    background-size: $backg-size;
 }

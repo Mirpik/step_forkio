@@ -20,7 +20,8 @@
 }
 
 .up-header-block__button {
-    @include width-height (119px, 37px);
+    height: 37px;
+    padding: 0 20px 0 20px;
     position: relative;
     right: 11px;
     border-radius: 20px;
@@ -59,3 +60,31 @@
     width: 15px;
 }
 
+.main-header-block {
+    @include flex-justify-pos (center);
+    @include width-height (100%, 718px);
+    @include background-img-property (center, no-repeat, cover);
+    flex-wrap: wrap;
+    background-image: url(../img/320/header-img.jpg); 
+    
+}
+
+.main-header-block__title {
+    @include font-s_font-w_color (48px, 700, #ffffff);
+    font-family: $font-family-Montserrat;
+}
+
+.main-header-block__description {
+    @include font-s_font-w_color (18px, 400, #8d81ac);
+    display: flex;
+    flex-flow: column;
+    text-transform: capitalize;
+}
+
+.main-header-block__description-span-1 {
+    
+}
+
+.main-header-block__sub-description {
+
+}
