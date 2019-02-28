@@ -58,6 +58,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 700px;
   flex-wrap: wrap;
   background-image: url(../img/320/header-img.jpg); }
 

@@ -70,6 +70,7 @@
     @include flex-justify-pos (center);
     // @include width-height (100%, 718px);
     @include background-img-property (center, no-repeat, cover);
+    padding-bottom: 700px;
     flex-wrap: wrap;
     background-image: url(../img/320/header-img.jpg); 
     
