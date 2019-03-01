@@ -58,8 +58,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 700px;
   flex-wrap: wrap;
+  padding-bottom: 700px;
   background-image: url(../img/320/header-img.jpg); }
 
 .main-header-block__title {
