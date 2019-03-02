@@ -1,10 +1,99 @@
 .here-is-what-you-get{
-    width: 100%;
-    margin:  0 auto;
-    &__taras{
-        height: 100px;
-        border: 1px solid red;
-        background-color: aqua;
-        background-size: cover;
-    }
+        width: 320px;
+        margin: 0 auto;
+        border:1px solid aqua;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 }
+.here-is-what-you-get__carousel{
+    width: 70%;
+    display: flex;
+    border: 1px dotted red;
+    /* overflow: hidden; */
+    
+ }
+ .here-is-what-you-get__carousel__items{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+ }
+ 
+ .carousel__items__img{
+     display: block;
+     margin: 0 auto;
+     width: 86px;
+     height: 86px;
+     border: 1px solid rgb(248, 184, 186);
+     border-radius: 43px;
+     box-sizing: border-box;
+     overflow: hidden;
+     background-image: url(../img/320/Jhon_Travolta.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-top: 63px;
+ }
+ .robo{
+     background-image: url(../img/320/Robocop.jpg);
+ }
+ .bat{
+     background-image: url(../img/320/Batman.jpg);
+ }
+ .carousel__items__name{
+     font-family: 'Montserrat', sans-serif;
+     color:  #474747;
+     font-size: 24px;
+     font-weight: 700;
+     margin-top: 25px;
+     text-align: center;
+ }
+ .carousel__items__proffesion{
+     font-family: 'Montserrat', sans-serif;
+     color:  #8d81ac;
+     font-size: 16px;
+     font-weight: 400;
+     margin-top: 7px;
+     text-align: center;
+     }
+     .carousel__items__description{
+         font-family: 'Lato', sans-serif;
+         color:  #333333;
+         font-size: 17px;
+         font-weight: 400;
+         text-align: center;
+         padding-top: 23px;
+         text-align: center;
+     }
+     .violet-text{
+         color:  #8d81ac;
+     }
+     .carousel__items__hours{
+         font-family: 'Montserrat', sans-serif;
+         color:  #848e97;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 32px;
+         text-align: center;
+         padding-top: 16px;
+         padding-bottom: 35px;
+     }
+ .here-is-what-you-get__button{
+     display: flex;
+     align-items: center;
+     width: 10%;
+     justify-content: center;
+ }
+ .here-is-what-you-get__arrov-left{
+     cursor: pointer;
+     display: flex;
+     justify-content: flex-start;
+ }
+ .here-is-what-you-get__arrov-right{
+     cursor: pointer;
+     display: flex;
+     
+ }
+ .hide{
+     display: none;
+ }
