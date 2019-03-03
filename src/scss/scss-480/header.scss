@@ -1,0 +1,26 @@
+@media screen and (min-width: 401px) and (max-width: 480px) {
+    .up-header-block-logo__text-logo {
+        display: block;
+    }
+
+    .button {
+        padding: 16px 30px 17px 31px;
+        border-radius: 26px;
+
+        &--position {
+            @include calcPosition(top, '((100vw - 480px) * 4.7 + 804px)');
+        }
+    }
+    
+    .button__text {
+        @include font-s_font-w_color (17px, 700, #ffffff);
+    }
+
+    .main-header-block {
+        @include flex-justify-pos (center);
+        @include background-img-property (50% -181%, no-repeat, contain);
+        padding-bottom: 642px;
+        flex-wrap: wrap;
+        background-image: url(../img/480/header-img.jpg)
+    }
+}

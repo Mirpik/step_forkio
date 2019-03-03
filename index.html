@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Forkio</title>
@@ -13,31 +14,58 @@
     <header class="header">
         <div class="container">
             <section class="up-header-block">
-                <div class="up-header-block__logo">
-                    
+                <div class="up-header-block-logo">
+                    <a href="#!" class="up-header-block-logo__logo">
+                        
+                    </a>
+                    <a href="#!" class="up-header-block-logo__text-logo">
+                        forkio
+                    </a>
                 </div>
-                <div class="up-header-block__button button button--right">
-                    <p class="button__text">
-                        Buy Now
+                
+                <nav id="header-menu" class="header-menu">
+                        <a href="#!" class="header-menu__element">
+                            home
+                        </a>
+                        <a href="#!" class="header-menu__element">
+                            overview
+                        </a>
+                        <a href="#!" class="header-menu__element">
+                            about fork
+                        </a>
+                        <a href="#!" class="header-menu__element">
+                            buying options
+                        </a>
+                        <a href="#!" class="header-menu__element">
+                            support
+                        </a>
+                    </nav>
+                
+                <a href="#!" class="up-header-block__button button button--text-transform-capitalize">
+                    <p class="button__text button__text--small">
+                        buy now
                     </p>
-                </div>
-                <div class="burger-menu-btn">
+                </a>
+                <a href="#!" id="burger-menu-btn" class="burger-menu-btn">
                     <div class="burger-menu-btn__wrapper">
                         <div class="burger-menu-btn__element"></div>
                         <div class="burger-menu-btn__element"></div>
                         <div class="burger-menu-btn__element"></div>
                     </div>
-                </div>
+                </a>
             </section>
             <section class="main-header-block">
                 <h2 class="main-header-block__title">Fork App</h2>
                 <p class="main-header-block__description">
-                   <span class="main-header-block__description-span-1">a real gamechanger in the</span> <span class="main-header-block__description-span-2">world of web development</span> 
+                   <span class="main-header-block__description-span main-header-block__description-span--margin-top-a">a real gamechanger in the</span> 
+                   <span class="main-header-block__description-span main-header-block__description-span--margin-top-a">world of web development</span> 
                 </p>
                 <p class="main-header-block__sub-description">v. 2.8 for mac and windows</p>     
-                <div class="button button--position">
-    
-                </div>
+                <a href="#!" class="button button--position button--text-transform-capitalize">
+                    <p class="button__text button__text--medium">
+                        download for free now
+                    </p>
+                </a>
             </section>
         </div>
     </header>
@@ -50,5 +78,6 @@
     <section class="people-are-talking-about-fork"></section>
     <section class="fork-subscription-pricing"></section>
     <footer class="footer"></footer>
+    <script src="./src/js/drop-down-menu.js"></script>
 </body>
 </html>

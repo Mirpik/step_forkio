@@ -28,3 +28,7 @@
     background-repeat: $backg-repeat;
     background-size: $backg-size;
 }
+
+@mixin calcPosition ($top, $expression) {
+    #{$top}: calc(#{$expression});
+}
