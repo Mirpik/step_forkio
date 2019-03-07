@@ -1,10 +1,63 @@
+@media only screen and (min-width : 320px) and (max-width : 479px) {}
 .here-is-what-you-get{
-        width: 320px;
-        margin: 0 auto;
-        border:1px solid aqua;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.here-is-what-you-get__holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.holder__slogan{
+    display: flex;
+    width: 76%;
+    line-height: 1.35;
+    font-family: 'Montserrat', sans-serif;
+    color:  #8d81ac;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 37px;
+    
+}
+.holder__item{
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.holder__item__img{
+    margin-top: 34px;
+}
+.holder__item__title{
+    font-family: 'Montserrat', sans-serif;
+    color:  #323232;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 29px;
+}
+.holder__item__text{
+    font-family: 'Lato', sans-serif;
+    color:  #848e97;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 21px;
+    line-height: 1.35;
+}
+.holder__item__img-code{
+    background-image: url(../img/320/code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 381px;
+    width: 100%;
+    margin-top: 57px;
+}
+//_______________________ SLIDER_____________________________ //
+.here-is-what-you-get__slider{
+    border:1px solid aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .here-is-what-you-get__carousel{
     width: 70%;
