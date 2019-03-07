@@ -28,6 +28,7 @@
 }
 .holder__item__img{
     margin-top: 34px;
+    cursor: pointer;
 }
 .holder__item__title{
     font-family: 'Montserrat', sans-serif;
@@ -51,6 +52,7 @@
     height: 381px;
     width: 100%;
     margin-top: 57px;
+    cursor: pointer;
 }
 //_______________________ SLIDER_____________________________ //
 .here-is-what-you-get__slider{
@@ -60,6 +62,7 @@
     justify-content: space-between;
 }
 .here-is-what-you-get__carousel{
+    display: flex;
     width: 70%;
     display: flex;
     border: 1px dotted red;
