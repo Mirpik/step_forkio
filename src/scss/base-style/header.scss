@@ -1,0 +1,145 @@
+
+.up-header-block {
+    @include flex-align-pos (center);
+    justify-content: space-between;
+    height: 103px;
+    padding: 0 15px 0 15px;
+    background-color: #262626;
+}
+
+.up-header-block-logo {
+    @include flex-align-pos(center);
+}
+
+.up-header-block-logo__logo {
+    @include width-height (43px, 41px);
+    background-image: url(../img/header-logo.png);
+}
+
+.up-header-block-logo__logo:hover {
+    background-image: url(../img/header-logo-hower.png);
+}
+
+.up-header-block-logo__text-logo {
+    @include font-s_font-w_color(24px, 400, #8d81ac);
+    display: none;
+    font-family: $font-family-Lato;
+    margin-left: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.up-header-block-logo__text-logo:hover {
+    color: #ffffff;
+}
+
+.header-menu__element {
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.header-menu__element:hover {
+    color: #ffffff;
+}
+
+
+.button {
+    @include flex-justify-pos(center);
+    position: relative;
+    padding: 10px 24px 11px 25px;
+    border-radius: 20px;
+    background-color: #8e82ae;
+    text-decoration: none;
+    text-align: center;
+
+    &--text-transform-capitalize {
+        text-transform: capitalize;
+    }
+
+    &--position {
+        position: absolute;
+        @include calcLength(top, '((100vw - 320px) * 2.25 + 800px)');
+    }
+
+    &--pseudo::after {
+        @include font-s_font-w_color(14px, 400, #848e97);
+        content: "Unlimited 30-Days Trial Period";
+        position: absolute;
+        top: 50px;
+        font-family: $font-family-Montserrat;
+    }
+}
+
+.button:hover {
+    background-color: #ffffff;
+    
+    .button__text {
+        color: #8e82ae;
+    }
+}
+
+.button__text {
+    font-family: $font-family-Montserrat;
+
+    &--small {
+        @include font-s_font-w_color (15px, 700, #ffffff);
+    }
+
+    &--medium {
+        @include font-s_font-w_color (18px, 700, #ffffff);
+    }
+}
+
+.burger-menu-btn {
+    @include width-height (30px, 27px);
+    padding-top: 2px;
+}
+
+.burger-menu-btn__wrapper {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.burger-menu-btn__element {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: all 0.05s linear;
+}
+
+.burger-menu-btn__element:first-child {
+    width: 20px;
+}
+
+.main-header-block {
+    @include flex-align-pos (center);
+    flex-direction: column;
+    margin-top: -1px;
+    text-align: center;
+}
+
+.main-header-block__title {
+    @include font-s_font-w_color (48px, 700, #ffffff);
+    font-family: $font-family-Montserrat;
+    margin-top: 60px;
+}
+
+.main-header-block__description {
+    @include font-s_font-w_color (18px, 400, #8d81ac);
+    display: flex;
+    margin-top: 10px;
+    font-family: $font-family-Lato;
+}
+
+.main-header-block__description-span--margin-top-a {
+    margin-top: 11px;
+}
+
+.main-header-block__sub-description {
+    @include font-s_font-w_color (14px, 400, #848e97);
+    margin-top: 22px;
+    font-family: $font-family-Montserrat;
+    text-transform: uppercase;
+}

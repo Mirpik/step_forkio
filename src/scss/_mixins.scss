@@ -28,3 +28,16 @@
     background-repeat: $backg-repeat;
     background-size: $backg-size;
 }
+
+
+@mixin calcLength ($length, $expression) {
+    #{$length}: calc(#{$expression});
+}
+
+// @mixin calcPosition ($top, $expression) {
+//     #{$top}: calc(#{$expression});
+// }
+
+// @mixin heightCalc ($height, $exp) {
+//     #{$height}: calc(#{$exp});
+// }
