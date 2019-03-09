@@ -1,156 +1,50 @@
-.container {
-    // min-width: 320px;
-}
-
-.up-header-block {
-    @include flex-align-pos (center);
-    justify-content: space-between;    
-    height: 103px;
-    padding: 0 15px 0 15px;
-    background-color:#262626;
-}
-
-.up-header-block-logo {
-    @include flex-align-pos(center);
-}
-
-.up-header-block-logo__logo {
-    @include width-height (43px, 41px);
-    background-image: url(../img/header-logo.png);
-
-}
-
-.up-header-block-logo__text-logo {
-    @include font-s_font-w_color(24px, 400, #8d81ac);
-    display: none;
-    font-family: $font-family-Lato;
-    margin-left: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.header-menu {
-    display: none;
-    flex-flow: column;
-    position: absolute;
-    width: 100%;
-    padding-bottom: 2px;
-    background-color: #2f2f2f;
-    z-index: 2;
-    right: 0;
-    top: 103px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-}
-
-.header-menu__element {
-    @include font-s_font-w_color(32px, 400, #ffffff);
-    @include flex-align-pos(center);
-    position: relative;
-    padding: 30px 0 26px 26px;
-    border-bottom: 1px solid #383838;
-    font-family: $font-family-Montserrat;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-
-.header-menu__element:hover {
-    color: #8e82ad;
-}
-
-.header-menu__element:hover:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    display: block;
-    width: 4px;
-    height: 53px;
-    background-color: #8e82ad;
-}
-
-.button {
-    display: block;
-    padding: 10px 24px 11px 25px;
-    border-radius: 20px;
-    background-color: #8e82ae;
-    text-decoration: none;
+@media screen and (max-width: 400px) {
     
-    &--text-transform-capitalize {
+    
+    .header-menu {
+        display: none;
+        flex-flow: column;
+        position: absolute;
+        width: 100%;
+        padding-bottom: 2px;
+        background-color: #2f2f2f;
+        z-index: 2;
+        right: 0;
+        top: 101px;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
+    }
+    
+    .header-menu__element {
+        @include font-s_font-w_color(32px, 400, #ffffff);
+        @include flex-align-pos(center);
+        position: relative;
+        padding: 30px 0 26px 26px;
+        border-bottom: 1px solid #383838;
+        font-family: $font-family-Montserrat;
+    }
+
+    .header-menu__element:hover {
+        color: #8e82ad;
+    }
+    
+    .header-menu__element:hover:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 4px;
+        height: 53px;
+        background-color: #8e82ad;
+    }
+
+    .main-header-block {
+        @include background-img-property (50% 0, no-repeat, contain);
+        @include calcLength (height, ('100vw * 2.242'));
+        background-image: url(../img/320/header-img.jpg);
+    }
+
+    .main-header-block__description {
+        flex-flow: column;
         text-transform: capitalize;
     }
-
-    &--position {
-        position: absolute;
-        // top: 698px;
-        @include calcPosition(top, '((100vw - 320px) * 3.5 + 700px)');
-    }
-}
-
-.button__text {
-    font-family: $font-family-Montserrat;
-    
-    &--small {
-        @include font-s_font-w_color (15px, 700, #ffffff);
-    }
-    
-    &--medium {
-        @include font-s_font-w_color (18px, 700, #ffffff);
-    }
-}
-
-.burger-menu-btn {
-    @include width-height (30px, 27px);
-    padding-top: 2px;
-}
-
-.burger-menu-btn__wrapper {
-    display: flex;
-    flex-flow: row-reverse wrap;
-}
-
-.burger-menu-btn__element {
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 3px 0;
-    border-radius: 2px;
-    transition: all 0.05s linear;
-}
-
-.burger-menu-btn__element:first-child {
-    width: 20px;
-}
-
-.main-header-block {
-    @include flex-justify-pos (center);
-    @include background-img-property (50% -59%, no-repeat, contain);
-    padding-bottom: 700px;
-    flex-wrap: wrap;
-    background-image: url(../img/320/header-img.jpg); 
-    
-}
-
-.main-header-block__title {
-    @include font-s_font-w_color (48px, 700, #ffffff);
-    font-family: $font-family-Montserrat;
-    margin-top: 40px;
-}
-
-.main-header-block__description {
-    @include font-s_font-w_color (18px, 400, #8d81ac);
-    display: flex;
-    flex-flow: column;
-    margin-top: 10px;
-    font-family: $font-family-Montserrat;
-    text-transform: capitalize;
-}
-
-.main-header-block__description-span--margin-top-a {
-    margin-top: 11px;
-}
-
-.main-header-block__sub-description {
-    @include font-s_font-w_color (14px, 400, #848e97);
-    margin-top: 22px;
-    font-family: $font-family-Montserrat;
-    text-transform: uppercase;
 }
