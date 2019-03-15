@@ -1,5 +1,9 @@
-.about-fork-title {
-    @include font-s_font-w_color (48px, 700, #ffffff);
-    margin-top: 60px;
-    text-transform: capitalize;
+@media screen and (max-width: 400px) {
+
+    
+    .about-fork-title {
+        @include font-s_font-w_color (36px, 700, #ffffff);
+        text-transform: capitalize;
+        line-height: 50px;
+    }
 }

@@ -6,28 +6,73 @@
 
     .header-menu {
         @include flex-justify-pos(center);
-        @include calcLength (left, ('100vw * 0.1'));
-        box-sizing: border-box;
         position: relative;
-        margin-right: 299px;
-    }
+        left: 300px;
+        
+        @media screen and (min-width: 1281px) and (max-width: 1491px) {
+            left: 200px;
+        }
+        
+        @media screen and (min-width: 1071px) and (max-width: 1280px) {
+            left: 100px;
+        }
 
-    .header-menu__element {
-        @include font-s_font-w_color(16px, 700, #8d81ac);
-        position: relative;
-        margin: 0 auto;
-        padding: 0  25px 0 25px;
-        text-align: center;
-        font-family: $font-family-Montserrat;
-    }
+        @media screen and (min-width: 891px) and (max-width: 1070px) {
+            left: 1px;
+        }
 
-    .header-menu__element:first-child {
-        display: none;
+        @media screen and (min-width: 769px) and (max-width: 890px) {
+            position: absolute;
+            left: 175px;
+
+            .header-menu__element {
+                padding: 0 10px 0 10px;
+            }
+        }
+
+        
+        &__element {
+            @include font-s_font-w_color(16px, 700, #8d81ac);
+            position: relative;
+            margin: 0 auto;
+            padding: 0  25px 0 25px;
+            text-align: center;
+            font-family: $font-family-Montserrat;
+        }
+        
+        &__element:first-child {
+            display: none;
+        }
     }
 
     .button {
-        position: absolute;
-        right: 7px;
+        padding: 16px 30px 17px 31px;
+        border-radius: 26px;
+
+        @media screen and (min-width: 769px) and (max-width: 1200px) {
+
+            &--position {
+                top: 95%;
+            }
+        }
+
+        @media screen and (min-width: 1201px) and (max-width: 1600px) {
+
+            &--position {
+                top: 96%;
+            }
+        }
+
+        @media screen and (min-width: 1601px) {
+            
+            &--position {
+                top: 97%;
+            }
+        }
+
+        &--pseudo::after {
+            top: 70px;
+        }
     }
     
     .burger-menu-btn {
@@ -36,21 +81,21 @@
     }
 
     .main-header-block {
-        @include calcLength (height, ('100vw * 1.0415'));
+        @include calcLength (height, ('100vw * 0.58'));
         @include background-img-property (50% 0, no-repeat, contain);
         background-image: url(../img/1200/header-img.jpg);
-    }
-    
-    .main-header-block__title {
-        margin-top: 100px;
-        font-size: 82px;
-    }
-
-    .main-header-block__description {
-        font-size: 30px;
-    }
-
-    .main-header-block__sub-description {
-        font-size: 16px;
+        
+        &__title {
+            margin-top: 100px;
+            font-size: 82px;
+        }
+        
+        &__description {
+            font-size: 30px;
+        }
+        
+        &__sub-description {
+            font-size: 16px;
+        }
     }
 }

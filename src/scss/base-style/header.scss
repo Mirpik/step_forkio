@@ -1,45 +1,57 @@
+.container {
+    padding: 0 10px;
+    background-image: url(../img/320/header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .up-header-block {
     @include flex-align-pos (center);
     justify-content: space-between;
     height: 103px;
+    margin: 0 -10px 0 -10px;
     padding: 0 15px 0 15px;
     background-color: #262626;
 }
 
 .up-header-block-logo {
     @include flex-align-pos(center);
+
+
+    &__logo {
+        @include width-height (43px, 41px);
+        background-image: url(../img/header-logo.png);
+    }
+
+    &__logo:hover {
+        background-image: url(../img/header-logo-hower.png);
+    }
+
+    &__text-logo {
+        @include font-s_font-w_color(24px, 400, #8d81ac);
+        display: none;
+        font-family: $font-family-Lato;
+        margin-left: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__text-logo:hover {
+        color: #ffffff;
+    }
 }
 
-.up-header-block-logo__logo {
-    @include width-height (43px, 41px);
-    background-image: url(../img/header-logo.png);
-}
+.header-menu {
 
-.up-header-block-logo__logo:hover {
-    background-image: url(../img/header-logo-hower.png);
-}
-
-.up-header-block-logo__text-logo {
-    @include font-s_font-w_color(24px, 400, #8d81ac);
-    display: none;
-    font-family: $font-family-Lato;
-    margin-left: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.up-header-block-logo__text-logo:hover {
-    color: #ffffff;
-}
-
-.header-menu__element {
-    text-transform: capitalize;
-    text-decoration: none;
-}
-
-.header-menu__element:hover {
-    color: #ffffff;
+    &__element {
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    
+    &__element:hover {
+        color: #ffffff;
+    }
 }
 
 
@@ -58,7 +70,6 @@
 
     &--position {
         position: absolute;
-        @include calcLength(top, '((100vw - 320px) * 2.25 + 800px)');
     }
 
     &--pseudo::after {
@@ -68,78 +79,79 @@
         top: 50px;
         font-family: $font-family-Montserrat;
     }
-}
 
-.button:hover {
-    background-color: #ffffff;
-    
-    .button__text {
-        color: #8e82ae;
-    }
-}
+    &:hover {
+        background-color: #ffffff;
 
-.button__text {
-    font-family: $font-family-Montserrat;
-
-    &--small {
-        @include font-s_font-w_color (15px, 700, #ffffff);
+        .button__text {
+            color: #8e82ae;
+        }
     }
 
-    &--medium {
-        @include font-s_font-w_color (18px, 700, #ffffff);
+    &__text {
+        font-family: $font-family-Montserrat;
+
+        &--small {
+            @include font-s_font-w_color (15px, 700, #ffffff);
+        }
+
+        &--medium {
+            @include font-s_font-w_color (18px, 700, #ffffff);
+        }
     }
 }
 
 .burger-menu-btn {
     @include width-height (30px, 27px);
     padding-top: 2px;
-}
 
-.burger-menu-btn__wrapper {
-    display: flex;
-    flex-flow: row-reverse wrap;
-}
+    &__wrapper {
+        display: flex;
+        flex-flow: row-reverse wrap;
+    }
 
-.burger-menu-btn__element {
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 3px 0;
-    border-radius: 2px;
-    transition: all 0.05s linear;
-}
+    &__element {
+        width: 25px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 3px 0;
+        border-radius: 2px;
+        transition: all 0.05s linear;
+    }
 
-.burger-menu-btn__element:first-child {
-    width: 20px;
+    &__element:first-child {
+        width: 20px;
+    }
 }
 
 .main-header-block {
     @include flex-align-pos (center);
     flex-direction: column;
+    position: relative;
     margin-top: -1px;
     text-align: center;
-}
 
-.main-header-block__title {
-    @include font-s_font-w_color (48px, 700, #ffffff);
-    font-family: $font-family-Montserrat;
-    margin-top: 60px;
-}
+    &__title {
+        @include font-s_font-w_color (48px, 700, #ffffff);
+        font-family: $font-family-Montserrat;
+        margin-top: 60px;
+    }
 
-.main-header-block__description {
-    @include font-s_font-w_color (18px, 400, #8d81ac);
-    display: flex;
-    margin-top: 10px;
-    font-family: $font-family-Lato;
-}
+    &__description {
+        @include font-s_font-w_color (18px, 400, #8d81ac);
+        display: flex;
+        margin-top: 10px;
+        font-family: $font-family-Lato;
+    }
 
-.main-header-block__description-span--margin-top-a {
-    margin-top: 11px;
-}
+    &__description-span--margin-top-a {
+        margin-top: 11px;
+    }
 
-.main-header-block__sub-description {
-    @include font-s_font-w_color (14px, 400, #848e97);
-    margin-top: 22px;
-    font-family: $font-family-Montserrat;
-    text-transform: uppercase;
+    &__sub-description {
+        @include font-s_font-w_color (14px, 400, #848e97);
+        margin-top: 22px;
+        font-family: $font-family-Montserrat;
+        text-transform: uppercase;
+    }
 }
