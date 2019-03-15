@@ -225,3 +225,41 @@
 
 .hide {
   display: none; }
+
+.here-is-what-you-get-itams {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .here-is-what-you-get-itams .net-button {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #c8cbcf;
+    background-color: #c8cbcf;
+    background-size: cover;
+    border-radius: 4px;
+    box-sizing: border-box; }
+    .here-is-what-you-get-itams .net-button .net-button-image {
+      display: flex;
+      position: absolute;
+      left: 24px; }
+    .here-is-what-you-get-itams .net-button .net-button-text {
+      display: flex;
+      font-family: 'Montserrat', sans-serif;
+      color: #000000;
+      font-size: 21px;
+      font-weight: 400;
+      margin-top: 17px;
+      margin-bottom: 18px; }
+  .here-is-what-you-get-itams .followeers {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: #848e97;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 30px; }
