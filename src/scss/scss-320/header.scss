@@ -1,6 +1,5 @@
 @media screen and (max-width: 400px) {
-    
-    
+     
     .header-menu {
         display: none;
         flex-flow: column;
@@ -12,39 +11,48 @@
         right: 0;
         top: 101px;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-    }
-    
-    .header-menu__element {
-        @include font-s_font-w_color(32px, 400, #ffffff);
-        @include flex-align-pos(center);
-        position: relative;
-        padding: 30px 0 26px 26px;
-        border-bottom: 1px solid #383838;
-        font-family: $font-family-Montserrat;
+        
+        &__element {
+            @include font-s_font-w_color(32px, 400, #ffffff);
+            @include flex-align-pos(center);
+            position: relative;
+            padding: 30px 0 26px 26px;
+            border-bottom: 1px solid #383838;
+            font-family: $font-family-Montserrat;
+        }
+        
+        
+        &__element:hover {
+            color: #8e82ad;
+        }
+        
+        &__element:hover:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 4px;
+            height: 53px;
+            background-color: #8e82ad;
+        }
     }
 
-    .header-menu__element:hover {
-        color: #8e82ad;
-    }
-    
-    .header-menu__element:hover:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        display: block;
-        width: 4px;
-        height: 53px;
-        background-color: #8e82ad;
-    }
+    .button {
 
+        &--position {
+            top: 97%;
+        }
+    }
+     
     .main-header-block {
         @include background-img-property (50% 0, no-repeat, contain);
-        @include calcLength (height, ('100vw * 2.242'));
-        background-image: url(../img/320/header-img.jpg);
-    }
-
-    .main-header-block__description {
-        flex-flow: column;
-        text-transform: capitalize;
+        // @include calcLength (height, ('100vw * 2.242'));
+        // background-image: url(../img/320/header-img.jpg);
+        
+        &__description {
+            flex-flow: column;
+            text-transform: capitalize;
+            margin-bottom: 200px;
+        }
     }
 }

@@ -2,9 +2,84 @@
 
     &--about-fork-background {
         background-image: url(../img/320/about-fork_background.jpg);
+        background-color: #4b3b4e;
+        background-repeat: no-repeat;
+    }
+
+    &--padding-top {
+        padding-top: 60px;
+    }
+
+    &--flex {
+        @include flex-justify-pos (center);
+        flex-direction: column;
     }
 }
 
 .about-fork-title {
     font-family: $font-family-Montserrat;
+    text-align: center;
+}
+
+.content-box {
+    @include flex-justify-pos (center);
+    flex-direction: column;
+
+    &::after {
+        content: "";
+        width: 90%;
+        height: 2px;
+        margin: 40px auto;
+        background-color: #645766;
+    }
+    
+    &__element {
+        @include flex-align-pos (center);
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    
+    &__description {
+        @include font-s_font-w_color (16px, 700, #ffffff);
+        font-family: $font-family-Lato;
+        font-style: italic;
+        padding: 0px 20px 0px 20px;
+        margin-top: 32px;
+        line-height: 24px;
+        text-align: center;
+    }
+    
+    &__logo-href {
+        @include background-img-property (center, no-repeat, contain);
+        
+        &--1 {
+            @include width-height (165px, 43px);
+            background-image: url(../img/about-fork-logo1.png);
+        }
+        
+        &--2 {
+            @include width-height (148px, 50px);
+            background-image: url(../img/about-fork-logo2.png);
+        }
+        
+        &--3 {
+            @include width-height (64px, 64px);
+            background-image: url(../img/about-fork-logo3.png);
+        }
+        
+        &--4 {
+            @include width-height (225px, 25px);
+            background-image: url(../img/about-fork-logo4.png);
+        }
+        
+        &--5 {
+            @include width-height (166px, 34px);
+            background-image: url(../img/about-fork-logo5.png);
+        }
+        
+        &--6 {
+            @include width-height (108px, 34px);
+            background-image: url(../img/about-fork-logo6.png);
+        }
+    }
 }

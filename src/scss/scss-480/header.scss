@@ -15,29 +15,29 @@
         right: 0;
         top: 101px;
         box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.35);
-    }
-    
-    .header-menu__element {
-        @include font-s_font-w_color(32px, 400, #ffffff);
-        @include flex-align-pos(center);
-        position: relative;
-        padding: 30px 0 26px 26px;
-        border-bottom: 1px solid #383838;
-        font-family: $font-family-Montserrat;
-    }
-
-    .header-menu__element:hover {
-        color: #8e82ad;
-    }
-    
-    .header-menu__element:hover:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        display: block;
-        width: 4px;
-        height: 53px;
-        background-color: #8e82ad;
+        
+        &__element {
+            @include font-s_font-w_color(32px, 400, #ffffff);
+            @include flex-align-pos(center);
+            position: relative;
+            padding: 30px 0 26px 26px;
+            border-bottom: 1px solid #383838;
+            font-family: $font-family-Montserrat;
+        }
+        
+        &__element:hover {
+            color: #8e82ad;
+        }
+        
+        &__element:hover:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            width: 4px;
+            height: 53px;
+            background-color: #8e82ad;
+        }
     }
     
     .button {
@@ -45,21 +45,21 @@
         border-radius: 26px;
 
         &--position {
-            @include calcLength (top, '((100vw - 480px) * 1.75 + 910px)');
+            top: 96%;
         }
 
         &--pseudo::after {
             top: 70px;
         }
-    }
-    
-    .button__text {
-        &--small {
-           font-size: 17px;
-        }
         
-        &--medium {
-            font-size: 21px;
+        &__text {
+            &--small {
+                font-size: 17px;
+            }
+            
+            &--medium {
+                font-size: 21px;
+            }
         }
     }
 
@@ -67,21 +67,21 @@
         @include background-img-property (50% 0, no-repeat, contain);
         @include calcLength (height, ('100vw * 1.737'));
         background-image: url(../img/480/header-img.jpg);
-    }
-
-    .main-header-block__title {
-        margin-top: 70px;
-        font-size: 54px;
-    }
-
-    .main-header-block__description {
-        flex-flow: column;
-        text-transform: capitalize;
-        font-size: 20px;
-    }
-
-    .main-header-block__sub-description {
-        font-size: 16px;
+        
+        &__title {
+            margin-top: 70px;
+            font-size: 54px;
+        }
+        
+        &__description {
+            flex-flow: column;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        
+        &__sub-description {
+            font-size: 16px;
+        }
     }
 
 
